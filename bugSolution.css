@@ -1,0 +1,14 @@
+Instead of relying solely on `calc()` for complex width calculations, consider using a more flexible approach like grid or flexbox.  This provides better control over element sizing and positioning.
+
+For example, using flexbox, you could achieve the same result without relying on `calc()`, offering more predictable behavior across different browser versions and contexts.
+
+/*bugSolution.css*/
+.container {
+display: flex;
+width: 100%;
+}
+
+.element {
+flex: 1;
+margin-right: 10px;/*instead of using calc()*/
+}
